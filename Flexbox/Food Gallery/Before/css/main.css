@@ -4,5 +4,33 @@ html {
 
 body {
     font-family: "Playfair Display";
-    margin: 12em;
+    margin: 12rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin-bottom: 6.8rem;
+}
+
+span {
+    color: #07801E;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    height: 400px;
+}
+
+img {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.second {
+    flex-grow: 2;
 }
