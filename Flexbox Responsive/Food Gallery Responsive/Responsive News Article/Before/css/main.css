@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 6.7em;
     background: #FCF5EB;
     font-family: "Poppins";
+    margin: 0;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 
 h1.mainhead {
     font-size: 4.4rem;
-    margin-top: 2em;
+    margin-top: 5em;
     position: relative;
 }
 
@@ -31,10 +32,11 @@ h1.mainhead::before {
 
 main {
     margin: 0 auto;
-    padding: 2.4em;
     max-width: 1200px;
+    padding: 2.4rem;
 }
 
+/* Default : Mobile First */
 section {
     display: flex;
     flex-direction: column;
@@ -49,23 +51,26 @@ p {
     font-size: 1.4rem;
 }
 
+/* Tablet */
 @media screen and (min-width: 600px) {
     section {
         flex-direction: row;
+        gap: 3rem;
         flex-wrap: wrap;
-        gap: 3em;
     }
+
     article {
         flex: 1;
     }
-    .first {
+
+    article.first {
         flex-basis: 100%;
     }
 }
 
+/* desktop */
 @media screen and (min-width: 900px) {
-
-    .first {
+    article.first {
         flex-basis: 0;
     }
 }
